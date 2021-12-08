@@ -1,0 +1,4 @@
+  h=float(input("Enter the height"))
+ a=float(input("Enter the base"))
+  z=1/2*a*h
+  print(z)
