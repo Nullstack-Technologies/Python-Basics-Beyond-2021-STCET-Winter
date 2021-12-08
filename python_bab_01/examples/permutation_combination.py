@@ -30,7 +30,7 @@ r = float(input("Please provide the r:"))
 permutation = math.factorial(n) / math.factorial(n-r)
 
 # calculate nCr
-combination = math.factorial(n) / math.factorial(n-r) * math.factorial(r)
+combination = math.factorial(n) / (math.factorial(n-r) * math.factorial(r))
 
 print(f"Permutation is: {permutation}")
 print(f"Combination is: {combination}")
