@@ -1,0 +1,7 @@
+# PYTHON BASICS & BEYOND .gitignore file
+# it prevents the following files from being committed to the repository
+
+venv/
+.idea/
+*.sqlite3
+*.pyc
