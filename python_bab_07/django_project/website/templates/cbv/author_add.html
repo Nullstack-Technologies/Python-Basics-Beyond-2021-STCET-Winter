@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+{% block title %} Authors! {% endblock %} 
+
+{% block body %}
+<h1>Authors</h1>
+
+<table style="border:2px black;">
+  <tr>
+    <td>ID<td>
+    <td>Name</td>  
+  </tr>
+  {% for author in authors %}
+  <tr>
+    <td>{{ author.id }}</td>
+    <td>{{ author.name }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+<br>
+
+<form action="{% url 'author_cbv_add' %}" method="POST">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" value="Add Author"> 
+</form>
+
+{% endblock %}
