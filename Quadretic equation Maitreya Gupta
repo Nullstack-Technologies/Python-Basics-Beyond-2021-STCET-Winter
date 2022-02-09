@@ -1,0 +1,18 @@
+#reverse Engineering The Equation
+a=float(input("Enter the Root"))
+c=float(input("Enter the square coefficient"))
+d=float(input("Enter the single coefficient"))
+e=float(input("Enter the Individual coefficient"))
+h=a*a
+z=h*c+a*d+e
+print(z)
+
+#Finding root From Equation
+c=float(input("Enter the square coefficient"))
+d=float(input("Enter the single coefficient"))
+e=float(input("Enter the Individual coefficient"))
+a=(d*d)-4*c*e
+f=math.sqrt(a)
+y=(d*d)+4*c*e
+k=math.sqrt(y)
+print(f"The two roots are {f} and {k}")
